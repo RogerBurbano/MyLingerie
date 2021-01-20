@@ -143,6 +143,8 @@ iframe {
 	position:fixed;
 	top:73%;
 	right: 1%;
+	// Bottom: 40px ; 
+	// right: 40px;
 }
 
 .par {
@@ -180,7 +182,7 @@ iframe {
 
 @media (max-width:950px) {
 
-	.animate__animated {
+	nav a .animate__animated {
 		display: none;
 	}
 
@@ -204,5 +206,12 @@ iframe {
 	h6 {
 		display: none;
 	}
+
+}
+@media (max-width:576px) {
+	.wh {
+		width: 30px;
+	}
+	
 
 }

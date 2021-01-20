@@ -108,7 +108,7 @@ iframe {
     padding-right: 1300px; } }
 
 @media (max-width: 950px) {
-  .animate__animated {
+  nav a .animate__animated {
     display: none; } }
 
 @media (max-width: 700px) {
@@ -122,6 +122,10 @@ iframe {
 @media (max-width: 550px) {
   h6 {
     display: none; } }
+
+@media (max-width: 576px) {
+  .wh {
+    width: 30px; } }
 
 .home {
   align-items: center;
