@@ -1,0 +1,146 @@
+#bg {
+	background-color: rgb(14, 13, 13);
+	font-family: 'Kaushan Script', cursive;
+}
+
+.text {
+	font-size: 13px;
+}
+
+.map {
+	font-size: 35px;
+}
+
+.fijart {
+	width: 0%;
+	height: 10vh;
+	margin: 0 auto;
+}
+
+h1 {
+	color: rgb(138, 127, 127);
+}
+
+// titulo
+.titu {
+	height: 500%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: navajowhite; */
+
+}
+
+.box {
+	display: flex;
+	margin-left: 550px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	margin-right: 500px;
+}
+
+.box .inner {
+	width: 500px;
+	height: 150px;
+	line-height: 125px;
+	font-size: 5em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+
+}
+
+.box .inner:first-child {
+	background-color: black;
+	color: pink;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: pink;
+	color: black;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+@media (max-width:600px) {
+	p.mor {
+
+		color: rgb(189, 14, 189);
+		font-size: 60px;
+
+	}
+}
+
+@media (max-width:497px) {
+	.modal-header {
+
+		display: none;
+
+	}
+}
+
+@media (max-width:497px) {
+	.inner span {
+
+		font-size: 20px;
+
+
+	}
+}
+
+@media (max-width:497px) {
+	.box .inner {
+		width: 150px;
+		height: 100px;
+
+	}
+}
+
+@media (max-width:497px) {
+
+	.box .inner:first-child {
+		background-color: black;
+		color: rgb(255, 145, 0);
+		transform-origin: right;
+		transform: perspective(100px) rotateY(-15deg);
+	}
+}
+
+@media (max-width:497px) {
+	.box .inner:last-child {
+		background-color: pink;
+		color: rgb(20, 22, 21);
+		transform-origin: left;
+		transform: perspective(100px) rotateY(15deg);
+	}
+}
+
+@media (max-width:700px) {
+	.box {
+
+		margin-left: 480px;
+	}
+}

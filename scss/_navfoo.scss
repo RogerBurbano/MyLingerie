@@ -1,0 +1,208 @@
+$colort:violet;
+$colort2: rgb(243, 233, 233);
+$font: 'Kaushan Script',
+cursive;
+
+@mixin tamaño {
+	width: 100px;
+
+}
+
+@mixin header {
+	background-color: $colort;
+	border-radius: 10px;
+}
+
+@mixin modal {
+	border-radius: 40px;
+	background-color: $colort;
+	width: 470px;
+	height: 300px;
+}
+
+
+* {
+	text-decoration: none !important;
+}
+
+.bg-nav {
+	background: rgba(0, 0, 0, 0.4);
+	font-family: $font;
+	font-size: 18px;
+}
+
+
+.animate__rotateIn {
+	@include tamaño;
+	//  width: 100px;
+
+}
+
+.img-logo {
+
+	width: 90px;
+	height: 90px;
+}
+
+.text {
+	font-size: 13px;
+}
+
+.map {
+	font-size: 35px;
+}
+
+.bg-foo {
+
+	background: rgba(0, 0, 0, 0.8);
+	font-family: $font;
+	font-size: 15px;
+}
+
+.row {
+	color: $colort2;
+	text-decoration: none;
+}
+
+h6 {
+	color: $colort2;
+
+}
+
+// .maps {
+// 	width: 50px;
+// 	height: 50px;
+// }
+
+.map {
+	&:hover {
+		color: $colort;
+	}
+}
+
+.titulo {
+	font-size: 17px;
+	color: violet;
+}
+
+.text-reset {
+	font-size: 25px;
+}
+
+.redes__title {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.map {
+	width: 50px;
+	color: $colort2;
+
+}
+
+.mor {
+	display: flex;
+	text-align: center;
+}
+
+div.modal-header {
+	@include header;
+	border-bottom: 0cm;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-bottom: 0cm;
+	padding-bottom: 10px;
+	padding-top: 0%;
+}
+
+iframe {
+	@include modal;
+}
+
+.maps {
+	// color: rgb(247, 38, 247);
+	margin-left: 180px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+
+.d-flex {
+	:hover {
+		color: $colort;
+	}
+}
+
+#navbarNavDropdown {
+	:hover {
+		color: $colort;
+	}
+}
+
+.what {
+	// background:none;
+	position:fixed;
+	top:73%;
+	right: 1%;
+}
+
+.par {
+	display: flex;
+	text-align: center;
+	margin-left: 400px;
+}
+
+.wh {
+	width: 50px;
+}
+
+
+@media (max-width:505px) {
+	div.modal-header {
+
+
+		border-bottom: 0cm;
+
+	}
+}
+
+@media (max-width:505px) {
+	.maps {
+		margin-left: 110px;
+	}
+}
+
+@media (min-width:1600px) {
+	.navbar-collapse {
+		justify-content: space-evenly;
+		padding-right: 1300px
+	}
+}
+
+@media (max-width:950px) {
+
+	.animate__animated {
+		display: none;
+	}
+
+}
+
+@media (max-width:700px) {
+	.bg-nav {
+
+		background-color: rgba(0, 0, 0, 0.0);
+	}
+}
+
+@media (max-width:355px) {
+	div.container {
+	padding-right: 100px;
+	}
+}
+
+@media (max-width:550px) {
+
+	h6 {
+		display: none;
+	}
+
+}
