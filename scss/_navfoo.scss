@@ -140,8 +140,8 @@ iframe {
 
 .what {
 	// background:none;
-	position:fixed;
-	top:73%;
+	position: fixed;
+	top: 73%;
 	right: 1%;
 	// Bottom: 40px ; 
 	// right: 40px;
@@ -197,7 +197,7 @@ iframe {
 
 @media (max-width:355px) {
 	div.container {
-	padding-right: 100px;
+		padding-right: 100px;
 	}
 }
 
@@ -208,10 +208,11 @@ iframe {
 	}
 
 }
+
 @media (max-width:576px) {
 	.wh {
 		width: 35px;
 	}
-	
+
 
 }

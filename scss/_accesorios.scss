@@ -1,102 +1,136 @@
-#bg{
+#bg {
 	background-color: black;
 }
-#bg h2{
-    text-align: center;
-    font-size: 50px;
-    font-family: $font;
-    margin-top: 80px;
-    color: $colort;
+
+#bg h2 {
+	text-align: center;
+	font-size: 50px;
+	font-family: $font;
+	margin-top: 80px;
+	color: $colort;
 	text-shadow: 0px 0px 6px black;
 	padding-bottom: 100px;
 	padding-top: 80px;
 }
 
-.contents-all{
-    width: 210px;
-    margin: auto;
-    perspective: 3500px;
-    position: relative;
-    margin-top: 50px;
+.contents-all {
+	width: 210px;
+	margin: auto;
+	perspective: 3500px;
+	position: relative;
+	margin-top: 50px;
 }
 
-.contents-carrousel{
-    width: 100%;
-    position: absolute;
-    animation: rotar 35s infinite linear;
-    transform-style: preserve-3d;
+.contents-carrousel {
+	width: 100%;
+	position: absolute;
+	animation: rotar 35s infinite linear;
+	transform-style: preserve-3d;
 }
 
-.contents-carrousel:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-
-.contents-carrousel figure{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 20px 0px black;
-    transition: all 300ms;
-    
-}
-
-.contents-carrousel figure:hover{
-    box-shadow: 0px 0px 0px 0px black;
-    transition: all 300ms;
-}
-
-.contents-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
-.contents-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
-
-.contents-carrousel img{
-    width: 100%;
-    transition: all 300ms;
-}
-
-.contents-carrousel img:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
+.contents-carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
 }
 
 
-@keyframes rotar{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(360deg);
-    }
+.contents-carrousel figure {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	position: absolute;
+	box-shadow: 0px 0px 20px 0px black;
+	transition: all 300ms;
+
+}
+
+.contents-carrousel figure:hover {
+	box-shadow: 0px 0px 0px 0px black;
+	transition: all 300ms;
+}
+
+.contents-carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(2) {
+	transform: rotateY(40deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(3) {
+	transform: rotateY(80deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(5) {
+	transform: rotateY(160deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(6) {
+	transform: rotateY(200deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(300px);
+}
+
+.contents-carrousel figure:nth-child(10) {
+	transform: rotateY(360deg) translateZ(300px);
+}
+
+.contents-carrousel img {
+	width: 100%;
+	transition: all 300ms;
+}
+
+.contents-carrousel img:hover {
+	transform: scale(1.2);
+	transition: all 300ms;
+}
+
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	}
+
+	to {
+		transform: rotateY(360deg);
+	}
 }
 
 
 
 .fijarl {
-	
+
 	height: 60vh;
-	
+
 }
+
 @media (max-width:497px) {
-#bg h2{
-    text-align: center;
-    font-size: 40px;
-    font-family: $font;
-    margin-top: 20px;
-    color: $colort;
-	text-shadow: 0px 0px 6px black;
-	padding-bottom: 100px;
-	padding-top: 50px;
+	#bg h2 {
+		text-align: center;
+		font-size: 40px;
+		font-family: $font;
+		margin-top: 20px;
+		color: $colort;
+		text-shadow: 0px 0px 6px black;
+		padding-bottom: 100px;
+		padding-top: 50px;
+	}
 }
-}
+
 @media (max-width:800px) {
 
 	h6 {

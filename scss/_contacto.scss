@@ -79,14 +79,15 @@
 //     max-width: 1140px;
 // }
 @media (max-width: 685px) {
-    .btn{
+    .btn {
         display: none;
     }
 }
+
 @media (max-width: 685px) {
-    h1.font-weight-bold{
+    h1.font-weight-bold {
         font-size: 28px;
-        color:pink;
+        color: pink;
         padding-top: 40px;
     }
 }
