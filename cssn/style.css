@@ -125,7 +125,7 @@ iframe {
 
 @media (max-width: 576px) {
   .wh {
-    width: 30px; } }
+    width: 35px; } }
 
 .home {
   align-items: center;
@@ -133,8 +133,7 @@ iframe {
   background-size: cover;
   background-image: url(../images/slide0.webp);
   font-family: "Kaushan Script", cursive;
-  justify-content: center;
-  margin: 0 20px; }
+  justify-content: center; }
 
 #acce {
   text-align: center; }
@@ -220,7 +219,7 @@ section.container {
 .card__four .card__img {
   top: 5px;
   left: -4px;
-  height: 140%; }
+  height: 120%; }
 
 .card__four .card__bg {
   background: url(../images/disf.jpg) center/cover no-repeat; }
@@ -253,6 +252,9 @@ section.container {
   height: 30vh;
   margin: 0 auto; }
 
+span {
+  font-size: 25px; }
+
 @media (max-width: 964px) {
   .navbar-brand {
     display: none; } }
@@ -271,7 +273,7 @@ section.container {
 
 @media (max-width: 522px) {
   .card1 {
-    height: 140px;
+    height: 145px;
     width: 100px; } }
 
 @media (max-width: 522px) {
@@ -281,6 +283,16 @@ section.container {
     font-weight: 600;
     padding: 0 0px;
     margin-bottom: 0px; } }
+
+@media (max-width: 522px) {
+  section.container {
+    padding-top: 0px;
+    padding-bottom: 0px; } }
+
+@media (max-width: 522px) {
+  .text-danger span {
+    font-size: 15px;
+    color: pink; } }
 
 #body {
   background-image: url(../images/slide4.webp);
@@ -531,95 +543,99 @@ h3 {
     margin: auto;
     font-size: 40px; } }
 
-.hom {
-  background-color: black;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.nada {
-  height: 500%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-color: navajowhite; */ }
-
-.box {
-  display: flex;
-  margin-left: 550px;
+#bg h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Kaushan Script", cursive;
   margin-top: 80px;
-  margin-bottom: 80px;
-  margin-right: 500px; }
+  color: violet;
+  text-shadow: 0px 0px 6px black;
+  padding-bottom: 100px;
+  padding-top: 80px; }
 
-.box .inner {
-  width: 500px;
-  height: 150px;
-  line-height: 125px;
-  font-size: 5em;
-  font-family: sans-serif;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden; }
+.contents-all {
+  width: 210px;
+  margin: auto;
+  perspective: 3500px;
+  position: relative;
+  margin-top: 50px; }
 
-.box .inner:first-child {
-  background-color: black;
-  color: pink;
-  transform-origin: right;
-  transform: perspective(100px) rotateY(-15deg); }
-
-.box .inner:last-child {
-  background-color: pink;
-  color: black;
-  transform-origin: left;
-  transform: perspective(100px) rotateY(15deg); }
-
-.box .inner span {
-  position: absolute;
-  animation: marquee 5s linear infinite; }
-
-.box .inner:first-child span {
-  animation-delay: 2.5s;
-  left: -100%; }
-
-.fijar {
+.contents-carrousel {
   width: 100%;
-  height: 80vh;
-  margin: 0 auto; }
+  position: absolute;
+  animation: rotar 35s infinite linear;
+  transform-style: preserve-3d; }
 
-@keyframes marquee {
+.contents-carrousel:hover {
+  animation-play-state: paused;
+  cursor: pointer; }
+
+.contents-carrousel figure {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px black;
+  transition: all 300ms; }
+
+.contents-carrousel figure:hover {
+  box-shadow: 0px 0px 0px 0px black;
+  transition: all 300ms; }
+
+.contents-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(2) {
+  transform: rotateY(40deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(3) {
+  transform: rotateY(80deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(4) {
+  transform: rotateY(120deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(5) {
+  transform: rotateY(160deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(6) {
+  transform: rotateY(200deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(7) {
+  transform: rotateY(240deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(8) {
+  transform: rotateY(280deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(9) {
+  transform: rotateY(320deg) translateZ(300px); }
+
+.contents-carrousel figure:nth-child(10) {
+  transform: rotateY(360deg) translateZ(300px); }
+
+.contents-carrousel img {
+  width: 100%;
+  transition: all 300ms; }
+
+.contents-carrousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms; }
+
+@keyframes rotar {
   from {
-    left: 100%; }
+    transform: rotateY(0deg); }
   to {
-    left: -100%; } }
+    transform: rotateY(360deg); } }
 
-@media (max-width: 600px) {
-  p.mor {
-    color: #bd0ebd;
-    font-size: 20px; } }
+.fijarl {
+  height: 60vh; }
 
 @media (max-width: 497px) {
-  .inner span {
-    font-size: 20px; } }
-
-@media (max-width: 497px) {
-  .box .inner {
-    width: 150px;
-    height: 100px; } }
-
-@media (max-width: 497px) {
-  .box .inner:first-child {
-    background-color: black;
-    color: orange;
-    transform-origin: right;
-    transform: perspective(100px) rotateY(-15deg); } }
-
-@media (max-width: 497px) {
-  .box .inner:last-child {
-    background-color: pink;
-    color: #141615;
-    transform-origin: left;
-    transform: perspective(100px) rotateY(15deg); } }
-
-@media (max-width: 700px) {
-  .box {
-    margin-left: 480px; } }
+  #bg h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Kaushan Script", cursive;
+    margin-top: 20px;
+    color: violet;
+    text-shadow: 0px 0px 6px black;
+    padding-bottom: 100px;
+    padding-top: 50px; } }

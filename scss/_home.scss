@@ -8,9 +8,7 @@
 	background-image: url(../images/slide0.webp);
 	font-family: $font;
 	justify-content: center;
-
-	// text-align: center;
-	margin: 0 20px;
+	// margin: 0 20px;
 }
 
 #acce {
@@ -149,7 +147,7 @@ section.container {
 	.card__img {
 		top: 5px;
 		left: -4px;
-		height: 140%;
+		height: 120%;
 	}
 
 	.card__bg {
@@ -191,6 +189,9 @@ section.container {
 	margin: 0 auto;
 }
 
+span{
+	font-size: 25px;
+}
 
 
 @media (max-width:964px) {
@@ -215,18 +216,20 @@ section.container {
 @media (max-width:522px) {
 	.cards1 {
 		min-width: 200px;
-		
-	}
-}
-@media (max-width:522px) {
-	.card1 {
-		height: 140px;
-		width: 100px;
-		
 
 	}
 }
-@media (max-width:522px){
+
+@media (max-width:522px) {
+	.card1 {
+		height: 145px;
+		width: 100px;
+
+
+	}
+}
+
+@media (max-width:522px) {
 
 	.card__title {
 		// font-family: initial;
@@ -236,9 +239,17 @@ section.container {
 		padding: 0 0px;
 		margin-bottom: 0px;
 	}
-	
+}
 
-
-
-
+@media (max-width:522px) {
+	section.container {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+@media (max-width:522px) {
+.text-danger span{
+	font-size: 15px;
+	color:pink;
+}
 }
