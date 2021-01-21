@@ -1,4 +1,6 @@
-
+#bg{
+	background-color: black;
+}
 #bg h2{
     text-align: center;
     font-size: 50px;
@@ -94,4 +96,11 @@
 	padding-bottom: 100px;
 	padding-top: 50px;
 }
+}
+@media (max-width:800px) {
+
+	h6 {
+		display: none;
+	}
+
 }
