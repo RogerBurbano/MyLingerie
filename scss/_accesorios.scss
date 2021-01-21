@@ -114,20 +114,15 @@
 
 .fijarl {
 
-	height: 60vh;
+	height: 80vh;
 
 }
 
 @media (max-width:497px) {
 	#bg h2 {
-		text-align: center;
+		
 		font-size: 40px;
-		font-family: $font;
-		margin-top: 20px;
-		color: $colort;
-		text-shadow: 0px 0px 6px black;
-		padding-bottom: 100px;
-		padding-top: 50px;
+		
 	}
 }
 
@@ -135,6 +130,16 @@
 
 	h6 {
 		display: none;
+	}
+
+}
+
+
+@media (max-width:300px) {
+	#bg h2 {
+		
+		font-size: 25px;
+		
 	}
 
 }

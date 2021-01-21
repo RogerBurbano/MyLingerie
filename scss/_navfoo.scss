@@ -26,7 +26,7 @@ cursive;
 }
 
 .bg-nav {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.8);
 	font-family: $font;
 	font-size: 18px;
 }
@@ -51,7 +51,9 @@ cursive;
 .map {
 	font-size: 35px;
 }
-
+.dropdown-menu{
+	background-color: pink;
+}
 .bg-foo {
 
 	background: rgba(0, 0, 0, 0.8);
@@ -191,15 +193,15 @@ iframe {
 @media (max-width:700px) {
 	.bg-nav {
 
-		background-color: rgba(0, 0, 0, 0.0);
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 }
 
-@media (max-width:355px) {
-	div.container {
-		padding-right: 100px;
-	}
-}
+// @media (max-width:355px) {
+// 	div.container {
+// 		padding-right: 100px;
+// 	}
+// }
 
 @media (max-width:800px) {
 
