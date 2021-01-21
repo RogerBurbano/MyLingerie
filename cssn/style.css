@@ -280,7 +280,7 @@ section.container {
 
 @media (max-width: 522px) {
   .card__title {
-    color: #935deb;
+    color: white;
     font-size: 20px;
     font-weight: 600;
     padding: 0 0px;
