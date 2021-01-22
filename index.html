@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
-
 <!-- Inicio Nav -->
 
 <body class="home">
@@ -71,7 +70,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="sections/contacto.html">Regístrate</a>
                 </li>
-
             </ul>
     </nav>
     <!-- Cards -->
@@ -80,7 +78,6 @@
             <div class="cards1">
                 <p class="text-danger"><span>My</span><img src="images/flor1.png" width="60px"
                         alt=""><span>Rocielo</span></p>
-
                 <div class="card1 card__cero">
                     <div class="card__bg"></div>
                     <a href="sections/lenceria.html"><img class="card__img" src="images/lenceria1.png" height="px"
@@ -107,7 +104,7 @@
             </div>
             <div class="card1 card__three">
                 <div class="card__bg"></div>
-                <img class="card__img" src="images/baño.png" />
+                <img class="card__img" src="images/baño1.png" />
                 <div class="card__text">
                     <h2 class="card__title">Playa</h2>
                 </div>
@@ -122,9 +119,7 @@
     </div>
     </section>
     <div>
-
     </div>
-
     <!-- footer -->
     <div class="fijars container-fluid"></div>
     <footer class="bg-foo text-white py-">
@@ -140,7 +135,6 @@
                         <i class=" fas fa-globe-americas map"data-toggle="modal" data-target="#miModal"></i>
                     </a>
                 </div>
-
                 <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -192,10 +186,8 @@
         const images = document.querySelectorAll(".card__img");
         const backgrounds = document.querySelectorAll(".card__bg");
         const range = 40;
-
         // const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
         const calcValue = (a, b) => (a / b * range - range / 2).toFixed(1) // thanks @alice-mx
-
         let timeout;
         document.addEventListener('mousemove', ({
             x,
@@ -204,7 +196,6 @@
             if (timeout) {
                 window.cancelAnimationFrame(timeout);
             }
-
             timeout = window.requestAnimationFrame(() => {
                 const yValue = calcValue(y, window.innerHeight);
                 const xValue = calcValue(x, window.innerWidth);

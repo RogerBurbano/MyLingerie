@@ -210,7 +210,7 @@ section.container {
 .card__three .card__img {
   top: 5px;
   left: -4px;
-  height: 110%; }
+  height: 80%; }
 
 .card__three .card__bg {
   background: url(../images/fonpl.webp) center/cover no-repeat; }
@@ -457,13 +457,6 @@ h1 {
   .box {
     margin-left: 480px; } }
 
-/* .navbar{
-    margin-bottom: 80px;
-} */
-/* .nav{
-    margin: 20px 500px 20px 500px;
-    border-radius: 50%;
-} */
 .lenceria {
   background-image: url(../images/slide3.png);
   background-position: center center;

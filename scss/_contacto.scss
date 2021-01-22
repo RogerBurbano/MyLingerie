@@ -18,15 +18,8 @@
 
 .contact-box {
     padding: 4rem;
+
 }
-
-// .btn {
-//     font-weight: 400;
-//     padding: 1rem 2rem;
-//     border-radius: 5rem;
-//     min-width: 10rem;
-// }
-
 .btn {
     background-color: $colort;
 }
@@ -74,10 +67,6 @@
     }
 }
 
-// @media (min-width: 1200px)
-// .container, .container-lg, .container-md, .container-sm, .container-xl {
-//     max-width: 1140px;
-// }
 @media (max-width: 685px) {
     .btn {
         display: none;
