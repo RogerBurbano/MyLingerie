@@ -202,15 +202,16 @@ section.container {
 
 .card__two .card__img {
   top: 10px;
-  right: -10px; }
+  right: -10px;
+  height: 110%; }
 
 .card__two .card__bg {
   background: url(../images/fon2.jpg) center/cover no-repeat; }
 
 .card__three .card__img {
   top: 5px;
-  left: -4px;
-  height: 80%; }
+  left: -50px;
+  height: 120%; }
 
 .card__three .card__bg {
   background: url(../images/fonpl.webp) center/cover no-repeat; }
