@@ -30,18 +30,22 @@ h3 {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 1fr);
 	justify-items: center;
+	min-height: 100vh;
 
 	div {
 		justify-self: center;
 	}
 }
-
+// 530  797
 .grid img {
-	border-radius: 5%;
+	border-radius: 5%;     
 	width: 200px;
 }
 
 .imagen {
+	height:300px ;
+	width:200px ;
+	background-color: orange;
 	position: relative;
 	float: left;
 
